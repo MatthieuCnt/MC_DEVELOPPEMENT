@@ -5,13 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-
+		
 		<script
 			src="https://kit.fontawesome.com/5f95a73160.js"
 			crossorigin="anonymous"></script>
 		<title>M.C.Développement</title>
 	</head>
 	<body>
+		<script src="index.js"></script>
 		<div class="loader">
 			<div class="loader__itemContainer">
 				<div class="loader__item loader__item--1"></div>
@@ -20,24 +21,45 @@
 			</div>
 		</div>
 		<!--En-tête de page-->
-		<div class="container">
+		
 			<header>
+				<div style="display: flex; justify-content: space-between;">
 				<a href="index.html" style="text-decoration: none;">
-					<img src="img/logo_MCD3.png" class="logoHeader" alt="logo"/>
-					<h1 style="color: black;font-size: 3rem;" color>M.C.Développement</h1>
+					<img style="width: 40%;" src="img/logo_MCD3.png" class="logoHeader" alt="logo"/>
 				</a>
+				<div class="style_div" style="display:flex; position: absolute;" >
+					<div style="display: none;" id="nav_div">
+					<ul>
+						<li>
+							<a>Mes réalisations</a>
+						</li>
+						<li>
+							<a>contact</a>
+						</li>
+					</ul>
+				</div>
+					<button onclick="navbar()">
+						<i style="padding: 1rem; font-size: 1.5rem;" class="fa fa-bars"></i>
+					</button>
+				
+					
+				
+				</div>
+			</div>
+
 			</header>
 			<main>
 				<section class="description gradually">
-					<ul>M.C.Développement vous accompagne dans votre projet de création de site internet.<br><br>
-						<li>Gestion de votre e-réputation, l'image véhiculée sur le web est primordiale.
-						<li>Un contenu riche avec des pages web estétiques et optimisées sur tous supports (mobiles, tablettes et écrans).</li>
-						<li>Un maillage en interne bien pensé, ainsi qu'une écoute active envers nos clients.
+					<h1 style="text-align: center;">M.C.Développement</h1>
+					<ul style="text-align: justify;">M.C.Développement vous accompagne dans votre projet de création de site internet.<br><br>
+						<li>Gestion de votre e-réputation, l'image véhiculée sur le web est primordiale.<br><br>
+						<li>Un contenu riche avec des pages web estétiques et optimisées sur tous supports (mobiles, tablettes et écrans).</li><br>
+						<li>Un maillage en interne bien pensé, ainsi qu'une écoute active envers nos clients.<br>
 						</li>
 						</ul>
 				</section>
-				<h1>Mes réalisations</h1><br> 
-					<section class="picture">
+				<h1 style="text-align: center;">Mes réalisations</h1><br> 
+					<section style="text-align: center;" class="picture">
 						<div class="contenerglobal gradually">
 							<a href="http://lesmauxdetrop.com"" class="picturelink link1">
 								<figure>
