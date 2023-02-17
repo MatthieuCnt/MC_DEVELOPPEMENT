@@ -98,18 +98,9 @@
 	}
 }
 
-.contenerglobal {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-areas:
-    'link1 link2'
-    'link3 link4'
-    'link5 .';
-grid-template-rows: none;
-grid-gap: 2rem;
-}
+
 .description {
-    background-color:#023B59;
+    background-color:#333333;
     color: white;
     padding: 2rem;
     text-align: center;

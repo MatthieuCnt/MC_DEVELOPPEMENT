@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="animation.css" />
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		
 		<script
@@ -22,36 +23,30 @@
 		</div>
 		<!--En-tête de page-->
 		
-			<header>
-				<div style="display: flex; justify-content: space-between;">
-				<a href="index.html" style="text-decoration: none;">
-					<img style="width: 40%;" src="img/logo_MCD3.png" class="logoHeader" alt="logo"/>
+		<header class="main-header">
+			<div class="topnav" id="myTopnav">
+				<div class="header-logo">
+					<img src="img/logo_MCD3.png" alt="logo" style="width: 35%; opacity: 1;" />
+				</div>
+				<div class="main-navbar">
+					<a href="index.html" class="active"><span class="span">Accueil</span></a>
+					<a href="nav_contact.html"><span class="span">Contact</span></a>
+				<a
+					href="javascript:void(0);"
+					class="topnav-link icon"
+					onclick="editNav()"
+				>
+					<i class="fa fa-bars" style="color: black;"></i>
 				</a>
-				<div class="style_div" style="display:flex; position: absolute;" >
-					<div style="display: none;" id="nav_div">
-					<ul>
-						<li>
-							<a>Mes réalisations</a>
-						</li>
-						<li>
-							<a>contact</a>
-						</li>
-					</ul>
-				</div>
-					<button onclick="navbar()">
-						<i style="padding: 1rem; font-size: 1.5rem;" class="fa fa-bars"></i>
-					</button>
-				
-					
-				
-				</div>
 			</div>
+		</header>
 
-			</header>
+
 			<main>
-				<section class="description gradually">
+				<section class="description gradually" style="font-size: 15px; text-align: justify;">
 					<h1 style="text-align: center;">M.C.Développement</h1>
-					<ul style="text-align: justify;">M.C.Développement vous accompagne dans votre projet de création de site internet.<br><br>
+					<p style="font-size: 15px;">M.C.Développement vous accompagne dans votre projet de création de site internet</p>
+					<ul>
 						<li>Gestion de votre e-réputation, l'image véhiculée sur le web est primordiale.<br><br>
 						<li>Un contenu riche avec des pages web estétiques et optimisées sur tous supports (mobiles, tablettes et écrans).</li><br>
 						<li>Un maillage en interne bien pensé, ainsi qu'une écoute active envers nos clients.<br>
@@ -66,7 +61,6 @@
 									<img
 									class="logo"
 										src="img/logo.jpg"
-										style="width: 18%;"
 									/>
 									<figcaption class="picturename">
 										Site de bien-être utilisant Html & Css.
@@ -77,8 +71,7 @@
 								<figure>
 									<img
 										class="logo"
-										src="img/Reservia.png" 
-										style="width: 22%;"
+										src="img/Reservia.png"
 									/>
 									<figcaption class="picturename">
 										Site Reservia - Recherche de logement - Projet Openclassroom.
@@ -90,7 +83,7 @@
 									<img
 										class="logo"
 										src="img/ohmyfood.png"
-										style="width: 40%;"
+										style="width: 70%;"
 									/>
 									<figcaption class="picturename">
 										Site Ohmyfood - Recherche de restaurants - Projet Openclassroom.
@@ -102,7 +95,7 @@
 									<img
 										class="logo"
 										src="img/Gameon.png" 
-										style="width: 30%; margin: 10px 0 10px 0; "
+										style="width: 40%; margin: 10px 0 10px 0; "
 									/>
 									<figcaption class="picturename">
 										Site Gameon - Formulaire d'inscription - Projet Openclassroom.
@@ -116,7 +109,7 @@
 									<img
 										class="logo"
 										src="img/fisheye.png"
-										style="width: 30%;"
+										style="width: 40%;"
 									/>
 									<div>
 									<figcaption class="picturename">
@@ -130,7 +123,7 @@
 									<img
 										class="logo"
 										src="img/logo_lespetitsplats.png"
-										style="width: 40%; margin: -40px 0 0; "
+										style="width: 50%; "
 									/>
 									<figcaption class="picturename">
 									Site Les petits plats - Choix menu restaurants - Projet Openclassroom.
@@ -139,19 +132,34 @@
 							</a>
 						</div>
 					</section>
-				    <section>
-					<h1 class="footer">Follow me on:<br><br>
-							<div class="social">
-							  <i class="fa fa-twitter" style="color:white; font-size: 4rem ;"></i></a>
-							  <i class="fa fa-github" style="color:white; font-size: 4rem ;"></i></a>
-							  <i class="fa fa-bitbucket" style="color:white; font-size: 4rem ;"></i>
-							  <i class="fa fa-codepen" style="color:white; font-size: 4rem ;"></i>
-							</div>
-							Adresse : 10 rue Guillaume Apollinaire<br> 31600 Lherm<br><br>
-							Téléphone : 06 75 51 64 24<br><br>
-							mail : webcreation.mcd@gmail.com
-				</section>
-			</main>
-		</div>
-	</body>
-</html>
+
+		     <!-- Footer -->
+
+			 <footer class="footer_contact">
+				<h4 class="footertitle">Contactez-moi!</h4><br>
+				<ul class="footerul_2">
+					<li class="info">
+						<a href="mailto:webcreation.mcd@gmail.com" class="fas fa-envelope mail_contact"></a><br>
+						<a
+							class="footertext"
+							href="mailto: webcreation.mcd@gmail.com"
+							>webcreation.mcd@gmail.com
+						</a>
+					</li>
+					<li class="info">
+						<a href="tel:+33675516424" class="fas fa-mobile-alt tel_contact"></a><br>
+						<a class="footertext_tel" href="tel:+33675516424"
+							>06 75 51 64 24</a><br><br>
+					</li>
+					<li class="info">
+						<a href="https://www.google.com/maps/place/Rue+Guillaume+Apollinaire,+31600+Lherm/@43.5443543,1.2950118,11.5z/data=!4m6!3m5!1s0x12aecb23f05a3949:0x54dd24028a0bcbe6!8m2!3d43.4332021!4d1.2267997!16s%2Fg%2F1td352sg" class="fas fa-map map_contact"></a><br>
+						<a href="https://www.google.com/maps/place/Rue+Guillaume+Apollinaire,+31600+Lherm/@43.5443543,1.2950118,11.5z/data=!4m6!3m5!1s0x12aecb23f05a3949:0x54dd24028a0bcbe6!8m2!3d43.4332021!4d1.2267997!16s%2Fg%2F1td352sg" class="footertext">Adresse : 10 rue Guillaume Apollinaire<br>31600 LHERM
+					</li>
+					<li class="infos">
+						<br><a style="font-weight: bolder;" class="footertext" href="mentions.html">Mentions légales</a>
+					</li>
+				</ul>
+			</footer>
+			<script src="index.js"></script>
+		</body>
+	</html>
