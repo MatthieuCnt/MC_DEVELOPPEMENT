@@ -180,6 +180,52 @@ body {
   text-align: center;
 }
 
+.contenerglobal {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 2rem;
+	width: 100%;
+	grid-column-gap: 4rem;
+  padding: 20rem;
+}
+
+.picturelink {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	border-radius: 1.3rem;
+  align-self: center;
+  background-color: #37373a;
+  width: 35rem;
+}
+
+.picturelink > figure {
+	height: 9rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+  justify-content: center;
+}
+
+
+.logo {
+	width: 11rem;
+	align-self: center;
+}
+
+.titlelogo {
+	padding: 2rem 2rem 0rem 2rem;
+}
+
+.picturename {
+	text-align: center;
+	padding-top: 0.6rem;
+	padding-left: 0.6rem;
+	padding-bottom: 0.6rem;
+  color: white;
+}
+
 /* contact */
 
 .section_center {
