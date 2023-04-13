@@ -22,6 +22,7 @@ body {
                             BUTTON
                         ==============
                         */
+                        
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
 * {
   box-sizing: border-box;
@@ -186,7 +187,7 @@ body {
   grid-row-gap: 2rem;
 	width: 100%;
 	grid-column-gap: 4rem;
-  padding: 20rem;
+  padding: 6rem 20rem 6rem 20rem;
 }
 
 .picturelink {
@@ -439,4 +440,16 @@ text-decoration: none;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 	}
+}
+
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
