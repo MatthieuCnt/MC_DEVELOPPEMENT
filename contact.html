@@ -1,100 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>MCDéveloppement</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="grid.css" />
 	<link rel="stylesheet" type="text/css" href="form.css" />
- 	 <head>
-    <meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5f95a73160.js" crossorigin="anonymous"></script>
-    <title>MCDéveloppement</title>
-	<div style="display: flex; justify-content: space-between;">
-		<img src="img/logo_MCD3.png" alt="logo" style="width: 10rem; padding: 1rem; "/>
-		<div class="box">
-	 		 <a href="index.html" style="padding:1rem; font-weight: bold; color: white; text-decoration: none;">ACCUEIL</a>
-		</div> 
- 	</div>
-	<div id="animation-bg"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-	<script>
-		VANTA.NET({
-		  el: "#animation-bg",
-		  mouseControls: true,
-		  touchControls: true,
-		  gyroControls: false,
-		  minHeight: 550.00,
-		  minWidth: 200.00,
-		  scale: 1.00,
-		  scaleMobile: 1.00,
-		  color: 0x3fbbff,
-		  backgroundColor: 0x2b2b2d,
-		  points: 12.00
-		})
-		</script>
-		<section class="section_style_contact">
-			<p class="p_style  texte">Vous ne savez pas par où commencer ?</p>
-			<div style="padding-left: 9rem;"></div>
-				<p class="texte1">Quel que soit ce dont vous avez besoin, nous construirons ensemble votre projet.<br><p>
-				<p class="texte2">Nous développerons votre charte graphique, pour arriver ensemble au contenu web qui vous représente!</br><p>
-				<p class="texte3">N’hésitez pas à me contacter pour commencer l’aventure<br></p>
-		  </section>
-  	</head>
-	  <main>
-		<body>
-		<section style="padding: 35rem 40rem 0rem 40rem;">
-			<div  class="form">
-				<form  action="https://formspree.io/f/xpzedzoj" method="POST">
-					<div class="title">Donnez suite à votre projet :</div>
-					<div class="input-container ic1">
-					<input name="Nom" id="firstname" class="input" type="text" placeholder=" " />
-					<label for="firstname" class="placeholder">Nom et prénom</label>
-					</div>
-					<div class="input-container ic1">
-						<input name="Entreprise" id="firstname" class="input" type="text" placeholder=" " />
-						<label for="firstname" class="placeholder_facultative">Nom de l'entreprise</label>
-					</div>
-					<div class="input-container ic2">
-					<input name="Email" id="email" class="input" type="text" placeholder=" " />
-					<label for="email" class="placeholder">Email</label>
-					</div>
-					<div class="input-container ic2">
-					<input name="Tel" id="firstname" class="input" type="text" placeholder=" " />
-					<label for="tel" class="placeholder">Numéro de Téléphone</>
-					</div>
-					<div class="input-container ic2">
-						<input name="Ville" id="firstname" class="input" type="text" placeholder=" " />
-						<label for="text" class="placeholder">Ville</>
-					</div>
-					<div style="height: 100px;" class="input-container ic2">
-						<input name="Message" id="firstname" class="input" type="text" placeholder=" " />
-						<label for="text" class="placeholder">Votre message</>
-					</div>
-					<button type="text" class="submit">Envoyer</button>
-				</form>
+</head>
+<body>
+	<div class="contenerindex" id="animation-bg">
+		<div class="box1">
+			<a href="index.html">
+				<img class="link1" src="img/logo_MCD3.png" alt="logo"/>
+			</a>
+		</div>
+		<div class="box2">
+			<div class="box">
+				<a class="link2" href="index.html">ACCUEIL</a>
 			</div>
-	</section>
-</main>
-<!-- Footer -->
+		</div> 
+		<div class="box3" style="margin: 0;">
+			<section class="section_style">
+				<p class="p_style texte">Vous ne savez pas par où commencer ?</p>
+				<ul>
+					<li class="texte1">Quel que soit ce dont vous avez besoin, nous construirons ensemble votre projet.<br><br>
+					<li class="texte2">Nous développerons votre charte graphique, pour arriver ensemble au contenu web qui vous représente!</li><br>
+					<li class="texte3">N’hésitez pas à me contacter pour commencer l’aventure!<br></li>
+				</ul>			
+			</section>
+			<script>
+				VANTA.NET({
+				el: "#animation-bg",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 570.00,
+				minWidth: 200.00,
+				scale: 1.00,
+				scaleMobile: 1.00,
+				color: 0x3fbbff,
+				backgroundColor: 0x2b2b2d,
+				points: 12.00,
+				})
+			</script>
+		</div>
+		<div class="box4" style="margin-top: 0%; text-align: -webkit-center;">
+			<section class="form-section">
+				<div class="form">
+					<form  action="https://formspree.io/f/xpzedzoj" method="POST">
+						<div class="title">Donnez suite à votre projet :</div>
+						<div class="input-container ic1">
+							<input name="Nom" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="firstname" class="placeholder">Nom et prénom</label>
+						</div>
+						<div class="input-container ic1">
+							<input name="Entreprise" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="firstname" class="placeholder_facultative">Nom de l'entreprise</label>
+						</div>
+						<div class="input-container ic2">
+							<input name="Email" id="email" class="input" type="text" placeholder=" " />
+							<label for="email" class="placeholder">Email</label>
+						</div>
+						<div class="input-container ic2">
+							<input name="Tel" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="tel" class="placeholder">Numéro de Téléphone</>
+						</div>
+						<div class="input-container ic2">
+							<input name="Ville" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="text" class="placeholder">Ville</>
+						</div>
+						<div style="height: 100px;" class="input-container ic2">
+							<input name="Message" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="text" class="placeholder">Votre message</>
+						</div>
+						<button type="text" class="submit">Envoyer</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- Footer -->
 
-<footer style=" text-align: center;" class="footer_contact">
-<h4 class="footertitle">Contactez-moi!</h4><br>
-<ul class="footerul_2">
-	<li class="info">
-		<a href="mailto:webcreation.mcd@gmail.com" class="fas fa-envelope mail_contact"></a><br>
-		<a class="footertext" href="mailto: webcreation.mcd@gmail.com">webcreation.mcd@gmail.com</a>
-	</li>
-	<li class="info">
-		<a href="tel:+33675516424" class="fas fa-mobile-alt tel_contact"></a><br>
-		<a class="footertext_tel" href="tel:+33675516424">06 75 51 64 24</a><br><br>
-	</li>
-	<li class="info">
-		<a href="https://fr.linkedin.com/in/matthieu-canet-b00b73101" class="footertext_linkedin">LinkedIn</a> 
-	</li><br>
-</ul>
-<a style="text-decoration: none;" class="footertitle" href="mentions.html">Mentions légales</a>
-</footer>
-<script src="index.js"></script>
+	<footer style=" text-align: center; margin-top: 10%;" class="footer_contact">
+		<h4 class="footertitle">Contactez-moi!</h4><br>
+		<ul class="footerul_2">
+			<li class="info">
+				<a href="mailto:webcreation.mcd@gmail.com" class="fas fa-envelope mail_contact"></a><br>
+				<a class="footertext" href="mailto: webcreation.mcd@gmail.com">webcreation.mcd@gmail.com</a>
+			</li>
+			<li class="info">
+				<a href="tel:+33675516424" class="fas fa-mobile-alt tel_contact"></a><br>
+				<a class="footertext_tel" href="tel:+33675516424">06 75 51 64 24</a><br><br>
+			</li>
+			<li class="info">
+				<a href="https://fr.linkedin.com/in/matthieu-canet-b00b73101" class="footertext_linkedin">LinkedIn</a> 
+			</li><br>
+		</ul>
+		<a style="text-decoration: none; padding-bottom: 3rem;" class="footertitle" href="mentions.html">Mentions légales</a>
+	</footer>
+	<script src="index.js"></script>
 </body>
-</html>
-	</body>
 </html>

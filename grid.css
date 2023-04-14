@@ -1,0 +1,59 @@
+.contenerindex {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+			"box1 box2"
+			"box3 box3"
+			"box4 box4";
+	grid-gap: 1rem;
+	width: 99vw;
+	height: 98vh;
+  }
+
+  .box1 {
+	grid-area: box1;
+  }
+
+  .box2 {
+	grid-area: box2;
+  }
+
+  .box3 {
+	grid-area: box3;
+	text-align: center;
+	margin: 12rem 0rem 5rem 0rem;
+  }
+
+  .box4 {
+	grid-area: box4;
+	text-align: center;
+	margin-top:7%;
+	position: relative;
+	text-decoration: none;
+  }
+
+  .contenerglobal {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-row-gap: 3rem;
+	grid-column-gap: 3rem;
+	justify-content: center;
+	margin-top: 4rem;
+  }
+
+  
+  @media screen and (min-width: 700px) {
+	.footerul_2 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.tel_contact {
+		margin-top: 0rem;
+	}
+
+	.linkedin_contact {
+		margin-top: 0rem;
+	}
+}
+
