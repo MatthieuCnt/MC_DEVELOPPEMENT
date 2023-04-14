@@ -4,7 +4,8 @@
 	grid-template-areas: 
 			"box1 box2"
 			"box3 box3"
-			"box4 box4";
+			"box4 box4"
+			"box5 box5";
 	grid-gap: 1rem;
 	width: 99vw;
 	height: 98vh;
@@ -26,6 +27,14 @@
 
   .box4 {
 	grid-area: box4;
+	text-align: center;
+	margin-top:7%;
+	position: relative;
+	text-decoration: none;
+  }
+
+  .box5 {
+	grid-area: box5;
 	text-align: center;
 	margin-top:7%;
 	position: relative;
