@@ -14,6 +14,50 @@
 	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 </head>
 <body>
+	<div id="id01" class="modal" style="z-index: 100;">
+			  <div style="margin-top: 8%;" class="modal-dialog">
+				<div class="modal-content">
+					<div style="margin-top: 0%; text-align: -webkit-center;">
+						<div class="bground" style="display: block;"></div>
+						<section class="form-section">
+							<div class="form">
+								<form action="https://formspree.io/f/xpzedzoj" method="POST">
+									<div class="title">Donnez suite à votre projet
+										<a style="margin-top: -2%;" href="#" class="closebtn">×</a>
+									</div>
+									
+									<div class="input-container ic1">
+										<input name="Nom" id="firstname" class="input" type="text" placeholder=" " />
+										<label for="firstname" class="placeholder">Nom et prénom</label>
+									</div>
+									<div class="input-container ic1">
+										<input name="Entreprise" id="firstname" class="input" type="text" placeholder=" " />
+										<label for="firstname" class="placeholder_facultative">Nom de l'entreprise</label>
+									</div>
+									<div class="input-container ic2">
+										<input name="Email" id="email" class="input" type="text" placeholder=" " />
+										<label for="email" class="placeholder">Email</label>
+									</div>
+									<div class="input-container ic2">
+										<input name="Tel" id="firstname" class="input" type="text" placeholder=" " />
+										<label for="tel" class="placeholder">Numéro de Téléphone</>
+									</div>
+									<div class="input-container ic2">
+										<input name="Ville" id="firstname" class="input" type="text" placeholder=" " />
+										<label for="text" class="placeholder">Ville</>
+									</div>
+									<div style="height: 100px;" class="input-container ic2">
+										<input name="Message" id="firstname" class="input" type="text" placeholder=" " />
+										<label for="text" class="placeholder">Votre message</>
+									</div>
+									<button type="text" class="submit">Envoyer</button>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>	
 	<div class="contenerindex" id="animation-bg">
 		<div class="box1">
 			<a href="index.html">
@@ -50,9 +94,9 @@
 				})
 			</script>
 				<!-- ANIMATION BTN !-->
-			<div class="box4" style="margin-top: 4%;">
+			<div style="margin-top: 4%;">
 				<div class="wrapper">
-					<a class="cta" href="#">
+					<a class="cta" href="#id01">
 					  <span style="font-size: 25px;">Contactez-moi</span>
 					  <span>
 						<svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -66,6 +110,7 @@
 					</a>
 				</div>
 			</div>
+		
 			<!-- Footer -->
 			<div class="box5">
 				<footer style=" text-align: center;" class="footer_contact">
