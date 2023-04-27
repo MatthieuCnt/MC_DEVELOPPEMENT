@@ -187,6 +187,7 @@
     }
     
     .picturelink > figure {
+      display: flex;
       height: 9rem;
       flex-wrap: wrap;
       flex-direction: column;

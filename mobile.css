@@ -49,11 +49,11 @@
 	
 	.picturelink {
 		width: 40rem;
-		height: 15rem;
+		height: 18rem;
 	}
 
 	.picturelink > figure {
-		display: block;
+		height: 100%;
 	  }
 	  
 	  .img1 {
@@ -81,6 +81,10 @@
 	
 	  .img6 {
 		width: 60%;
+	  }
+
+	  .figure {
+		padding: 2rem;
 	  }
 	
 }
