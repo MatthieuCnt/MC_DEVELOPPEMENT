@@ -1,500 +1,493 @@
-body {
-    background: #2b2b2d;
-    font-family: sans-serif;
+  body {
+      background: #2b2b2d;
+      font-family: sans-serif;
+      color: white;
+      font-family: circular, 'segoe ui', sans-serif;
+      }
+
+    ul {
+      list-style: none;
+      list-style-position: inside;
+    }
+   
+    .link1{
+      padding: 1rem;
+    }
+
+    .logomcd{
+      padding: 1rem;
+    }
+
+    .link2{
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    }
+
+    .p_style {
+      margin-top: -2rem;
+      z-index: 1;
+    }
+
+    .texte {
+      animation: fadein 4s ease forwards;
+    }
+
+
+    @keyframes fadein {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+    }
+
+    .texte1 {
+      opacity: 0;
+      animation: fadein 4s ease forwards;
+      animation-delay: 1s;
+    }
+
+    .texte2 {
+      opacity: 0;
+      animation: fadein 4s ease forwards;
+      animation-delay: 2s;
+    }
+
+    .texte3 {
+      opacity: 0;
+      animation: fadein 4s ease forwards;
+      animation-delay: 3s;
+    }
+
+    /* 
+    ==============
+        BUTTON
+    ==============
+    */
+
+    @import url("https://fonts.googleapis.com/css?family=Raleway:400");
+    * {
+      box-sizing: border-box;
+    }
+
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 90deg;
+      inherits: true;
+    }
+
+    @property --gradX {
+      syntax: '<percentage>';
+      initial-value: 50%;
+      inherits: true;
+    }
+
+    @property --gradY {
+      syntax: '<percentage>';
+      initial-value: 0%;
+      inherits: true;
+    }
+
+    :root {
+      --d: 2500ms;
+      --angle: 90deg;
+      --gradX: 100%;
+      --gradY: 50%;
+      --c1: rgba(168, 239, 255, 1);
+      --c2: rgba(168, 239, 255, 0.1);
+    }
+
+    .wrapper {
+      min-width: min(40rem, 100%);
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.35rem solid;
+      border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+      animation: borderRotate var(--d) linear infinite forwards;
+      cursor: pointer;
+      float: right;
+      margin: 2rem;
+    }
+
+    .box:nth-child(2) {
+      border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+      animation: borderRadial var(--d) linear infinite forwards;
+    }
+
+    .box-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.35rem solid;
+      border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+      animation: borderRotate var(--d) linear infinite forwards;
+      cursor: pointer;
+      margin: auto;
+    }
+
+    .box-bottom:nth-child(2) {
+      border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+      animation: borderRadial var(--d) linear infinite forwards;
+    }
+
+    @keyframes borderRotate {
+      100% {
+        --angle: 420deg;
+      }
+    }
+
+    @keyframes borderRadial {
+      20% {
+        --gradX: 100%;
+        --gradY: 50%;
+      }
+      40% {
+        --gradX: 100%;
+        --gradY: 100%;
+      }
+      60% {
+        --gradX: 50%;
+        --gradY: 100%;
+      }
+      80% {
+        --gradX: 0%;
+        --gradY: 50%;
+      }
+      100% {
+        --gradX: 50%;
+        --gradY: 0%;
+      }
+    }
+
+    .h3-chevron {
+      color: white;
+    }
+
+    .link-prjets {
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+    /* PROJETCS.HTML */
+
+    .picturelink {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      border-radius: 1.3rem;
+      align-self: center;
+      background-color: #37373ab0;
+    }
+    
+    .picturelink > figure {
+      height: 9rem;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .logo {
+      width: 11rem;
+      align-self: center;
+    }
+
+    .picturename {
+      padding: 1rem;
+    }
+
+    .h3-title {
+      text-align: center;
+    }
+
+    .section_style {
+      display: block;
+      text-decoration: none;
+      color: white;
+      border-radius: 1.3rem;
+      align-self: center;
+      background-color: #37373ab0;
+      padding: 1rem;
+    }
+
+    /* Zoom In #1 */
+  .hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .form-section {
+  width: 30%;
+  }
+
+  /* Footer du site*/
+  .footertitle {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+      font-family: circular, 'segoe ui', sans-serif;
+  }
+
+  .footerul {
+    list-style-type: none;
+    color: #fff;
+    text-align: center;
+  }
+
+  .footermenu {
+    list-style-type: none;
+  }
+
+  .footertext {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .mail {
+    padding-right: 0.5rem;
+  }
+
+  .tel {
+    padding-right: 0.5rem;
+    padding-left: 0.1rem;
+  }
+
+  .contact_picture {
+    border-radius: 50%;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+  }
+
+  .footerul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .footerul_2 {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    z-index: 100;
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footerul_contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0rem 3rem 4rem;
+  }
+
+  .tel_contact {
+    font-size: 4rem;
+      margin-top: 0rem;
+  }
+
+  .mail_contact {
+    font-size: 4rem;
+  }
+
+  .linkedin_contact {
+    font-size: 4rem;
+    margin-top: 2rem;
     color: white;
-    font-family: circular, 'segoe ui', sans-serif;
-     }
-
-  ul {
-    list-style: none;
-    list-style-position: inside;
-    font-size: 22px;
-  }
-  
-  .link1{
-    width: 12rem;
-    padding: 1rem;
+    transition: 0.5s;
+    text-decoration: none;
+    margin-top: 0rem;
   }
 
-  .link2{
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
+  .footertext_tel {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
   }
 
-  .p_style {
-    font-size: 25px;
-    margin-top: -2rem;
-    z-index: 1;
+  .footertext_linkedin{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
   }
 
-  .texte {
-    animation: fadein 4s ease forwards;
+  .div_button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+    width: 13rem;
   }
 
+  .contact_button {
+    padding: 1.5rem;
+    border: #83a6978e;
+    box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+    border-radius: 2rem;
+    background-color: #83a6978e;
+    font-weight: bold;
+    color: black;
+  }
 
-  @keyframes fadein {
-    0% {
-        opacity: 0;
+  .fas.fa-envelope {
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  .fas.fa-envelope:hover {
+    transform: translateY(-10px);
     }
-    100% {
-        opacity: 1;
+
+  .fas.fa-mobile-alt.tel_contact{
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
     }
+
+    .fas.fas.fa-mobile-alt.tel_contact:hover {
+    transform: translateY(-10px);
+    }
+
+    .linkedin_contact:hover {
+    transform: translateY(-10px);
+    }
+
+  .footertext_linkedin {
+      transition: 0.5s;
+    text-decoration: none;
   }
 
-  .texte1 {
-    opacity: 0;
-    animation: fadein 4s ease forwards;
-    animation-delay: 1s;
+  .footertext_linkedin:hover {
+    transform: translateY(-10px);
   }
 
-  .texte2 {
-    opacity: 0;
-    animation: fadein 4s ease forwards;
-    animation-delay: 2s;
+  .fas.fa-mobile-alt {
+    transition: 0.5s;
   }
 
-  .texte3 {
-    opacity: 0;
-    animation: fadein 4s ease forwards;
-    animation-delay: 3s;
+  .fas.fa-mobile-alt:hover {
+    transform: translateY(-10px);
   }
 
-  /* 
-  ==============
-      BUTTON
-  ==============
-  */
+  .mention_p {
+    font-size: 16px;
+    text-align: justify;
+  }
 
-  @import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
   * {
     box-sizing: border-box;
   }
 
-  @property --angle {
-    syntax: '<angle>';
-    initial-value: 90deg;
-    inherits: true;
-  }
-
-  @property --gradX {
-    syntax: '<percentage>';
-    initial-value: 50%;
-    inherits: true;
-  }
-
-  @property --gradY {
-    syntax: '<percentage>';
-    initial-value: 0%;
-    inherits: true;
-  }
-
-  :root {
-    --d: 2500ms;
-    --angle: 90deg;
-    --gradX: 100%;
-    --gradY: 50%;
-    --c1: rgba(168, 239, 255, 1);
-    --c2: rgba(168, 239, 255, 0.1);
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .wrapper {
-    min-width: min(40rem, 100%);
-  }
-
-  .box {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 0.35rem solid;
-    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-    animation: borderRotate var(--d) linear infinite forwards;
-    cursor: pointer;
-    width: 10rem;
-    height: 4rem;
-    float: right;
-    margin: 2rem;
   }
 
-  .box:nth-child(2) {
-    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
-    animation: borderRadial var(--d) linear infinite forwards;
+  .cta {
+      display: flex;
+      padding: 8px 35px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      color: white;
+      background: #023B59;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+      align-items: center;
   }
 
-  .box-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.35rem solid;
-    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-    animation: borderRotate var(--d) linear infinite forwards;
-    cursor: pointer;
-    width: 10rem;
-    height: 4rem;
-    margin: auto;
+  .cta:focus {
+    outline: none; 
   }
 
-  .box-bottom:nth-child(2) {
-    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
-    animation: borderRadial var(--d) linear infinite forwards;
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 black;
   }
 
-  @keyframes borderRotate {
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 0px;
+  }
+
+  .cta:hover  span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 45px;
+  }
+
+    span {
+      transform: skewX(15deg) 
+    }
+
+    span:nth-child(2) {
+      width: 20px;
+      margin-left: 30px;
+      position: relative;
+      top: 12%;
+    }
+    
+  /**************SVG****************/
+
+  path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+
+  path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+
+  .cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+
+  .cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+
+  .cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+
+  /* SVG animations */
+
+  @keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #2b2b2d;
+    }
     100% {
-      --angle: 420deg;
+        fill: white;
     }
   }
-
-  @keyframes borderRadial {
-    20% {
-      --gradX: 100%;
-      --gradY: 50%;
-    }
-    40% {
-      --gradX: 100%;
-      --gradY: 100%;
-    }
-    60% {
-      --gradX: 50%;
-      --gradY: 100%;
-    }
-    80% {
-      --gradX: 0%;
-      --gradY: 50%;
-    }
-    100% {
-      --gradX: 50%;
-      --gradY: 0%;
-    }
-  }
-
-  .h3-chevron {
-    color: white;
-  }
-
-  .link-prjets {
-  cursor: pointer;
-  text-decoration: none;
-  }
-
-  /* PROJETCS.HTML */
-
-  .picturelink {
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    border-radius: 1.3rem;
-    align-self: center;
-    background-color: #37373ab0;
-    width: 30rem;
-    height: 10rem;
-  }
-  
-  .picturelink > figure {
-    height: 9rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .logo {
-    width: 11rem;
-    align-self: center;
-  }
-
-  .picturename {
-    padding: 1rem;
-  }
-
-  .h3-title {
-    text-align: center;
-    font-size: 25px;
-  }
-
-  .section_style {
-    display: block;
-    text-decoration: none;
-    color: white;
-    border-radius: 1.3rem;
-    align-self: center;
-    background-color: #37373ab0;
-    padding: 1rem;
-    margin: 0% 20% 0% 20% ;
-
-  }
-
-  /* Zoom In #1 */
-.hover01 figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.hover01 figure:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
-
-.form-section {
- width: 30%;
-}
-
-/* Footer du site*/
-.footertitle {
-	color: #fff;
-	font-size: 1.5rem;
-	text-align: center;
-    font-family: circular, 'segoe ui', sans-serif;
-}
-
-.footerul {
-	list-style-type: none;
-	color: #fff;
-	text-align: center;
-}
-
-.footermenu {
-	list-style-type: none;
-}
-
-.footertext {
-	color: #fff;
-	font-size: 1rem;
-	text-decoration: none;
-}
-
-.mail {
-	padding-right: 0.5rem;
-}
-
-.tel {
-	padding-right: 0.5rem;
-	padding-left: 0.1rem;
-}
-
-.contact_picture {
-	border-radius: 50%;
-	width: 20rem;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 4rem;
-	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
-}
-
-.footerul {
-	list-style-type: none;
-	text-align: center;
-}
-
-.footerul_2 {
-	list-style-type: none;
-	text-align: center;
-	padding-left: 0;
-  z-index: 100;
-}
-
-.footerul_contact {
-	display: flex;
-	justify-content: space-between;
-	padding: 3rem 0rem 3rem 4rem;
-}
-
-.tel_contact {
-	font-size: 4rem;
-	
-}
-
-.mail_contact {
-	font-size: 4rem;
-}
-
-.linkedin_contact {
-	font-size: 4rem;
-	margin-top: 2rem;
-	color: white;
-	transition: 0.5s;
-  text-decoration: none;
-}
-
-.footertext_tel {
-	color: white;
-	font-size: 1rem;
-	text-decoration: none;
-}
-
-.footertext_linkedin{
-	margin-top: 2rem;
-	color: white;
-	font-size: 1rem;
-	text-decoration: none;
-}
-
-.div_button {
-	margin-left: auto;
-	margin-right: auto;
-	height: 2rem;
-	width: 13rem;
-}
-
-.contact_button {
-	padding: 1.5rem;
-	border: #83a6978e;
-	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
-	border-radius: 2rem;
-	background-color: #83a6978e;
-	font-weight: bold;
-	color: black;
-}
-
-.fas.fa-envelope {
-	color: white;
-	transition: 0.5s;
-	text-decoration: none;
-}
-
-.fas.fa-envelope:hover {
-	transform: translateY(-10px);
-  }
-
-.fas.fa-mobile-alt.tel_contact{
-  color: white;
-  transition: 0.5s;
-  text-decoration: none;
-  }
-
-  .fas.fas.fa-mobile-alt.tel_contact:hover {
-	transform: translateY(-10px);
-  }
-
-  .linkedin_contact:hover {
-	transform: translateY(-10px);
-  }
-
-.footertext_linkedin {
-    transition: 0.5s;
-	text-decoration: none;
-}
-
-.footertext_linkedin:hover {
-	transform: translateY(-10px);
-}
-
-.fas.fa-mobile-alt {
-	transition: 0.5s;
-}
-
-.fas.fa-mobile-alt:hover {
-	transform: translateY(-10px);
-}
-
-.mention_p {
-  font-size: 16px;
-  text-align: justify;
-}
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.cta {
-    display: flex;
-    padding: 8px 35px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: white;
-    background: #023B59;
-    transition: 1s;
-    box-shadow: 6px 6px 0 black;
-    transform: skewX(-15deg);
-    align-items: center;
-}
-
-.cta:focus {
-   outline: none; 
-}
-
-.cta:hover {
-    transition: 0.5s;
-    box-shadow: 10px 10px 0 black;
-}
-
-.cta span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 0px;
-}
-
-.cta:hover  span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 45px;
-}
-
-  span {
-    transform: skewX(15deg) 
-  }
-
-  span:nth-child(2) {
-    width: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 12%;
-  }
-  
-/**************SVG****************/
-
-path.one {
-  transition: 0.4s;
-  transform: translateX(-60%);
-}
-
-path.two {
-  transition: 0.5s;
-  transform: translateX(-30%);
-}
-
-.cta:hover path.three {
-  animation: color_anim 1s infinite 0.2s;
-}
-
-.cta:hover path.one {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.6s;
-}
-
-.cta:hover path.two {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.4s;
-}
-
-/* SVG animations */
-
-@keyframes color_anim {
-  0% {
-      fill: white;
-  }
-  50% {
-      fill: #2b2b2d;
-  }
-  100% {
-      fill: white;
-  }
-}
-

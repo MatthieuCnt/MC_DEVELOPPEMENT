@@ -1,0 +1,85 @@
+@media screen and (min-width: 1024px) {
+
+  .logomcd{
+    width: 12rem;
+  }
+  
+  .box {
+    width: 10rem;
+    height: 4rem;
+  }
+
+  .link2 {
+    font-size: inherit;
+  }
+
+  .box3 {
+    margin: 6rem 0rem 2rem 0rem;
+  }
+
+  .section_style {
+    margin: 0% 20% 0% 20%;
+  }
+
+  .box-bottom {
+    width: 10rem;
+    height: 4rem;
+  }
+
+  .p_style {
+    font-size: 25px;
+  }
+
+  ul {
+    font-size: 22px;
+  }
+
+  .contenerglobal {
+    display: grid;
+  }
+  
+  .h3-title {
+    font-size: 25px;
+  }
+
+  .picturename {
+    font-size: inherit;
+  }
+
+  .picturelink {
+      width: 30rem;
+      height: 10rem;
+  }
+
+  .picturelink > figure {
+    display: flex;
+  }
+
+  .img1 {
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .img2 {
+    width: 30%;
+  }
+
+  .img3 {
+    width: 25%;
+    border-radius: 5px;
+  }
+
+  .img4 {
+    width: 30%;
+    margin: 10px 0 10px 0;
+  }
+
+  .img5 {
+    width: 28%;
+  }
+
+  .img6 {
+    width: 40%;
+  }
+
+}

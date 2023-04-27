@@ -22,7 +22,6 @@
   .box3 {
 	grid-area: box3;
 	text-align: center;
-	margin: 6rem 0rem 2rem 0rem;
   }
 
   .box4 {
@@ -42,7 +41,6 @@
   }
 
   .contenerglobal {
-	display: grid;
 	grid-template-columns: auto auto;
 	grid-row-gap: 3rem;
 	grid-column-gap: 3rem;
@@ -50,19 +48,4 @@
 	margin-top: 4rem;
   }
 
-  
-  @media screen and (min-width: 700px) {
-	.footerul_2 {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.tel_contact {
-		margin-top: 0rem;
-	}
-
-	.linkedin_contact {
-		margin-top: 0rem;
-	}
-}
-
+ 
