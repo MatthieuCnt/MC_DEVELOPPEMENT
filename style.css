@@ -236,9 +236,8 @@
   /* Footer du site*/
   .footertitle {
     color: #fff;
-    font-size: 1.5rem;
     text-align: center;
-      font-family: circular, 'segoe ui', sans-serif;
+    font-family: circular, 'segoe ui', sans-serif;
   }
 
   .footerul {
@@ -286,8 +285,9 @@
     padding-left: 0;
     z-index: 100;
     display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
+
 
   .footerul_contact {
     display: flex;
@@ -305,14 +305,13 @@
   }
 
   .linkedin_contact {
-    font-size: 4rem;
-    margin-top: 2rem;
     color: white;
+    margin-top: 2rem;
     transition: 0.5s;
     text-decoration: none;
     margin-top: 0rem;
   }
-
+  
   .footertext_tel {
     color: white;
     font-size: 1rem;
@@ -411,7 +410,6 @@
 
   .cta {
       display: flex;
-      padding: 8px 35px;
       text-decoration: none;
       font-family: 'Poppins', sans-serif;
       font-size: 40px;
