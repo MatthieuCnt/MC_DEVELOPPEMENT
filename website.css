@@ -71,7 +71,7 @@
   .margin-btn {
     margin-top: 4%;
   }
-  
+
   .img1 {
     width: 15%;
     border-radius: 5px;
@@ -106,6 +106,47 @@
   .box4 {
     padding: 0 22% 5% 22%;
 	}
+
+  .form {
+    padding: 20px;
+  }
+
+  .form-section {
+    width: 30%;
+    }
+
+    .title {
+      font-size: 20px;
+      }
+
+      .closebtn {
+        font-size: 35px;
+      }
+
+      .ic1 {
+        margin-top: 30px;
+        }
+        
+        .ic2 {
+        margin-top: 30px;
+        }
+
+        .message {
+          height: 100px;
+          }
+
+        .submit {
+          height: 50px;
+          font-size: 18px;
+      }
+
+      .input-container {
+        height: 50px;
+      }
+
+      .height_input {
+        height: 120px;
+      }
 
   .footertitle {
     font-size: 1rem;

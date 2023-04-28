@@ -162,6 +162,49 @@
 	.footertitle {
 		font-size: 30px;
 	}
+
+	.form {
+		padding: 60px;
+		margin: 3rem;
+	}
+	
+
+	.closebtn {
+		font-size: 4rem;
+	}
+
+	.input-container {
+		height: 100px;
+	}
+
+	.height_input {
+        height: 200px;
+      }
+
+	.title {
+		font-size: 3rem;
+	  }
+
+	  .placeholder {
+		font-size: 28px;
+	}
+	.placeholder_facultative {
+		font-size: 28px;
+	}
+
+	.ic1 {
+		margin-top: 60px;
+	  }
+	  
+	  .ic2 {
+		margin-top: 60px;
+	  }
+	
+	  .submit {
+		height: 8rem;
+		font-size: 45px;
+
+	}
 }
 
 
